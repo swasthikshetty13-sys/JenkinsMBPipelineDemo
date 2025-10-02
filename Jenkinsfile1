@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build feature') {
+            steps {
+                echo 'My First Stage for MB'
+            }
+        }
+            stage('Testin feature'){
+            steps {
+                echo 'My Second Stage for MB'
+            }
+        }
+            stage('Deployin feature'){
+            steps {
+                echo 'My Third Stage for MB in'
+            }
+        }
+     }
+    }
+
